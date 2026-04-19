@@ -1,0 +1,243 @@
+'use client'
+
+import Link from 'next/link'
+import Image from 'next/image'
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
+
+const FIVERR_AFFILIATE_LINK = "https://go.fiverr.com/visit/?bta=1128446&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fsearch%252Fgigs%253Fquery%253DAI%252520logo%2526source%253Dtop-bar%2526ref_ctx_id%253Dd45683988bfa4b50b7bcc20016b0cac6%2526search_in%253Deverywhere%2526search-autocomplete-original-term%253Dai%252520logo"
+
+export default function WordmarkLogosCategory() {
+  return (
+    <main className="min-h-screen bg-background flex flex-col">
+      <Header />
+      
+      <div className="flex-1">
+        {/* Breadcrumb */}
+        <div className="border-b border-border bg-card">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8 py-4">
+            <div className="flex items-center gap-2 text-sm">
+              <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</Link>
+              <span className="text-muted-foreground">/</span>
+              <Link href="/categories" className="text-muted-foreground hover:text-foreground transition-colors">Categories</Link>
+              <span className="text-muted-foreground">/</span>
+              <span className="text-foreground font-medium">Wordmark Logos</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Section */}
+        <section className="py-12 lg:py-20 border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 mb-4">
+                  <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Typography Focus</span>
+                </div>
+                <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-4">
+                  Wordmark Logo Design
+                </h1>
+                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                  Typography-focused logos that turn your brand name into a visual masterpiece. Perfect for companies where the name itself is the brand identity.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href={FIVERR_AFFILIATE_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+                  >
+                    Find Typography Experts
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <a
+                    href="/categories"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-6 py-3 text-base font-semibold text-foreground hover:bg-muted transition-colors"
+                  >
+                    View All Categories
+                  </a>
+                </div>
+              </div>
+              <div className="relative h-96 lg:h-full rounded-xl overflow-hidden">
+                <Image
+                  src="/images/category-wordmark-logos.jpg"
+                  alt="Wordmark Logo Examples"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Wordmarks */}
+        <section className="py-16 lg:py-24 border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground mb-12">The Power of Wordmark Logos</h2>
+            
+            <div className="grid gap-8 md:grid-cols-3">
+              <div className="rounded-xl border border-border bg-card p-8">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Immediate Recognition</h3>
+                <p className="text-muted-foreground">Wordmarks create instant brand recall by making your company name itself the logo and visual identity.</p>
+              </div>
+              
+              <div className="rounded-xl border border-border bg-card p-8">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Professional & Clean</h3>
+                <p className="text-muted-foreground">Elegant typography communicates professionalism, sophistication, and credibility without unnecessary elements.</p>
+              </div>
+              
+              <div className="rounded-xl border border-border bg-card p-8">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0m-5.657 5.657l-.707.707M9 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Versatile & Scalable</h3>
+                <p className="text-muted-foreground">Wordmarks work beautifully at any size, from business cards to billboards, in full color or monochrome.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Wordmark Types */}
+        <section className="py-16 lg:py-24 border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground mb-8">Types of Wordmark Logos</h2>
+            
+            <div className="space-y-4">
+              {[
+                { type: "Letterspacing Wordmark", desc: "Custom letter spacing and proportions to create unique wordmark typography" },
+                { type: "Ligature Design", desc: "Connected letter combinations that form elegant integrated designs" },
+                { type: "Decorative Wordmark", desc: "Stylized letters with ornamental details and custom flourishes" },
+                { type: "Sans-Serif Modern", desc: "Clean, contemporary geometric letterforms for tech and modern brands" },
+                { type: "Serif Classic", desc: "Elegant serif typography for established, prestigious brands" },
+                { type: "Hand-Lettered", desc: "Custom hand-drawn typography for unique, personal brand identity" },
+              ].map((item) => (
+                <div key={item.type} className="flex gap-4 p-4 rounded-lg border border-border bg-card hover:bg-muted/50 transition-colors">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold text-sm flex-shrink-0">T</div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{item.type}</h3>
+                    <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Best For Industries */}
+        <section className="py-16 lg:py-24 border-b border-border bg-card">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground mb-8">Industries Perfect for Wordmark Logos</h2>
+            
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                { industry: "Fashion & Luxury", reason: "Elegant typography communicates high-end positioning and premium quality" },
+                { industry: "Tech Startups", reason: "Modern sans-serif wordmarks signal innovation and forward-thinking" },
+                { industry: "Publishing & Media", reason: "Typography showcases expertise in text and communications" },
+                { industry: "Law & Finance", reason: "Professional wordmarks convey trust, stability, and credibility" },
+                { industry: "Creative Agencies", reason: "Custom typography demonstrates design capabilities" },
+                { industry: "Restaurants & Hospitality", reason: "Distinctive lettering communicates brand personality and style" },
+              ].map((item) => (
+                <div key={item.industry} className="p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
+                  <h3 className="font-semibold text-foreground text-lg mb-2">{item.industry}</h3>
+                  <p className="text-muted-foreground text-sm">{item.reason}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Design Elements */}
+        <section className="py-16 lg:py-24 border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground mb-8">Key Elements of Effective Wordmark Design</h2>
+            
+            <div className="grid gap-6 md:grid-cols-2">
+              {[
+                { element: "Font Selection", details: "Choosing or creating the perfect typeface that embodies brand personality" },
+                { element: "Letter Spacing", details: "Custom kerning for visual balance and unique character relationships" },
+                { element: "Color Strategy", details: "Monochrome versatility with optional secondary color versions" },
+                { element: "Visual Hierarchy", details: "Emphasis on key letters or syllables through size or styling" },
+                { element: "Unique Flourishes", details: "Subtle design elements that distinguish your wordmark from others" },
+                { element: "Scalability", details: "Ensuring the design works at all sizes from favicon to billboard" },
+              ].map((item) => (
+                <div key={item.element} className="p-6 rounded-lg border border-border hover:border-primary/50 transition-colors">
+                  <h3 className="font-semibold text-foreground text-lg mb-2">{item.element}</h3>
+                  <p className="text-muted-foreground text-sm">{item.details}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 lg:py-24 border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <div className="rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 p-12 text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground mb-4">Design Your Wordmark Today</h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Find expert typographers and logo designers on Fiverr who specialize in custom wordmark and logotype design.
+              </p>
+              <a
+                href={FIVERR_AFFILIATE_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+              >
+                Hire a Typography Designer
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Categories */}
+        <section className="py-16 lg:py-24">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground mb-12">Explore Related Logo Categories</h2>
+            
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                { name: "Minimalist Design", href: "/categories/minimalist", desc: "Clean, simple wordmark concepts" },
+                { name: "Brand Identity", href: "/categories/brand-identity", desc: "Complete systems built around wordmarks" },
+                { name: "Vintage Logos", href: "/categories/vintage-logos", desc: "Classic serif wordmark designs" },
+              ].map((category) => (
+                <Link
+                  key={category.name}
+                  href={category.href}
+                  className="group p-6 rounded-xl border border-border bg-card hover:bg-muted transition-colors"
+                >
+                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">{category.name}</h3>
+                  <p className="text-sm text-muted-foreground mt-2">{category.desc}</p>
+                  <div className="mt-4 flex items-center text-primary text-sm font-medium">
+                    Learn more <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <Footer />
+    </main>
+  )
+}
