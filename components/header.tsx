@@ -5,13 +5,14 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const AFFILIATE_LINK = "https://go.fiverr.com/visit/?bta=1128446&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fwww.fiverr.com%252Fsearch%252Fgigs%253Fquery%253DAI%252520logo%2526source%253Dtop-bar%2526ref_ctx_id%253Dd45683988bfa4b50b7bcc20016b0cac6%2526search_in%253Deverywhere%2526search-autocomplete-original-term%253Dai%252520logo"
+const AFFILIATE_LINK = "https://go.fiverr.com/visit/?bta=1128446&brand=fiverrmarketplace&landingPage=https%253A%252F%252Fpro.fiverr.com%252Fhafeezur_rehman%252Fdesign-cool-and-eye-catchy-minimalist-logo-for-business%253Fcontext_referrer%253Dfiverr_business_listing%2526source%253Dtop-bar%2526ref_ctx_id%253D22109873fc89469bb16e530946b4a09f%2526pckg_id%253D1%2526pos%253D3%2526context_type%253Dauto%2526funnel%253D22109873fc89469bb16e530946b4a09f%2526imp_id%253D8904439f-8f04-43d9-979f-9eb1b3a6d1ec"
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Blog", href: "/blog" },
   { name: "Categories", href: "/categories" },
   { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ]
 
 export function Header() {
